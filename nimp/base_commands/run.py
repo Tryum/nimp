@@ -59,7 +59,7 @@ class RunCommand(nimp.command.Command):
         parser.add_argument('parameters',
                             help='command to run',
                             metavar='<command> [<argument>...]',
-                            nargs=argparse.REMAINDER)
+                            nargs=argparse.ZERO_OR_MORE)
         return True
 
     def is_available(self, env):
